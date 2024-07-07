@@ -121,3 +121,5 @@ app.delete('/blogs/:id', async (req, res) => {
 app.listen(3001, () => {
     console.log('Server is Running on port 3001');
 });
+
+module.exports = app;
