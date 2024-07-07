@@ -17,6 +17,10 @@ const connectToDatabase = require('./connectDB');
 mongoose.set('strictQuery', false);
 connectToDatabase();
 
+app.get('/', (req, res)=>{
+    res.send("Welcome ")
+})
+
 // User registration
 app.post('/register', async (req, res) => {
     const { fname, lname, email, password } = req.body;
